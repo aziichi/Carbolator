@@ -43,10 +43,10 @@ const fetchData = async(url, data) => {
 // This function was attached to an onClick event listener added to the calculate button using Velo by Wix.
 export async function button1_click(event) {
 	
-  let new_electricity = await Number.parseInt($w('#input1').value);
-	let new_gas = await Number.parseInt($w('#input2').value);
-	let new_roadTravel = await Number.parseInt($w('#input3').value);
-	let new_airTravel = await Number.parseInt($w('#input4').value);
+    let new_electricity = await Number.parseInt($w('#input1').value);
+    let new_gas = await Number.parseInt($w('#input2').value);
+    let new_roadTravel = await Number.parseInt($w('#input3').value);
+    let new_airTravel = await Number.parseInt($w('#input4').value);
 
     if(new_electricity === electricity && new_gas === gas && new_airTravel === airTravel && new_roadTravel === roadTravel){
         return;
